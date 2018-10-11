@@ -23,6 +23,16 @@
             ],
             "source": "clean.R",
             "target": "clean_data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.csv",
+            "target": "mergeArrests.R"
         }
     ],
     "nodes": [
@@ -38,10 +48,12 @@
             "name": "clean_data.csv"
         },
         {
+            "assigned_to": "jkachhadia",
             "desc": "",
-            "name": "mergeArrests.R"
+            "name": "mergeArrests.R",
+            "task_status": "in progress"
         }
     ],
-    "updated_at": "2018-10-11 15:46:26",
+    "updated_at": "2018-10-11 15:47:12",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
