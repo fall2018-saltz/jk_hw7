@@ -43,6 +43,16 @@
             ],
             "source": "mergeArrests.R",
             "target": "mergedData.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "mergedData.csv",
+            "target": "add_stateGeom.R"
         }
     ],
     "nodes": [
@@ -71,6 +81,6 @@
             "name": "add_stateGeom.R"
         }
     ],
-    "updated_at": "2018-10-11 15:51:32",
+    "updated_at": "2018-10-11 15:51:47",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
