@@ -77,10 +77,15 @@
             "name": "mergedData.csv"
         },
         {
+            "assigned_to": "jkachhadia",
             "desc": "",
-            "name": "add_stateGeom.R"
+            "name": "add_stateGeom.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "datageom.csv"
         }
     ],
-    "updated_at": "2018-10-11 15:51:47",
+    "updated_at": "2018-10-11 16:03:05",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
