@@ -53,6 +53,16 @@
             ],
             "source": "mergedData.csv",
             "target": "add_stateGeom.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "add_stateGeom.R",
+            "target": "datageom.csv"
         }
     ],
     "nodes": [
@@ -86,6 +96,6 @@
             "name": "datageom.csv"
         }
     ],
-    "updated_at": "2018-10-11 16:03:05",
+    "updated_at": "2018-10-11 16:03:16",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
