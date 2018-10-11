@@ -9,6 +9,8 @@ cleanDataFrame<- function(){
   #removing the first four columns from the dataframe as they are not needed and assigning it to dfStates variable
   dfStates<-dfStates[,-c(1:4)]
   
+  #removing the district of Columbia data which is not available in US arrests.
+data<-data[-c(which(data$stateName=="District of Columbia")),]
   #renaming the column labels/names as per our need
   colnames(dfStates)<-c('stateName','population','popOver18','percentOver18')
   
