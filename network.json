@@ -63,6 +63,16 @@
             ],
             "source": "add_stateGeom.R",
             "target": "datageom.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "datageom.csv",
+            "target": "map_viz.R"
         }
     ],
     "nodes": [
@@ -100,6 +110,6 @@
             "name": "map_viz.R"
         }
     ],
-    "updated_at": "2018-10-11 16:03:37",
+    "updated_at": "2018-10-11 16:03:47",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
