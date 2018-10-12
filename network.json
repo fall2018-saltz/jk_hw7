@@ -106,10 +106,15 @@
             "name": "datageom.csv"
         },
         {
+            "assigned_to": "jkachhadia",
             "desc": "",
-            "name": "map_viz.R"
+            "name": "map_viz.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "mapviz1.png"
         }
     ],
-    "updated_at": "2018-10-11 16:03:47",
+    "updated_at": "2018-10-12 15:53:13",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
