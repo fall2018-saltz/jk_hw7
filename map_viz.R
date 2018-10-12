@@ -3,6 +3,7 @@ library(ggplot2)
 library(ggmap)
 library(maps)
 data$stateName<-tolower(data$stateName)
+
 us <- map_data("state")
 #Step B: Generate a color coded map
 viz <- ggplot(data, aes(map_id=stateName)) + geom_map(map=us, aes(fill=stateArea))+ expand_limits(x=us$long,y=us$lat) + coord_map() + ggtitle("US Map")
