@@ -93,6 +93,16 @@
             ],
             "source": "map_viz.R",
             "target": "vizMurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "vizpopulation",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "vizpopulation.png"
         }
     ],
     "nodes": [
@@ -141,6 +151,6 @@
             "name": "vizpopulation.png"
         }
     ],
-    "updated_at": "2018-10-12 16:37:17",
+    "updated_at": "2018-10-12 16:37:32",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
