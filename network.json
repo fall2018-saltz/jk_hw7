@@ -73,6 +73,16 @@
             ],
             "source": "datageom.csv",
             "target": "map_viz.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "viz",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "mapviz1.png"
         }
     ],
     "nodes": [
@@ -115,6 +125,6 @@
             "name": "mapviz1.png"
         }
     ],
-    "updated_at": "2018-10-12 15:53:13",
+    "updated_at": "2018-10-12 15:53:23",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
