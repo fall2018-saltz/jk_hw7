@@ -14,8 +14,8 @@ nycx <- NewMergeDf[data$stateName=="new york","x"]
 nycy <- NewMergeDf[data$stateName=="new york","y"]
 
 viznyc <- ggplot(data, aes(map_id=stateName)) +
-  geom_map(map=us, aes(fill=Statearea))+
-  geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=Population))+
+  geom_map(map=us, aes(fill=stateArea))+
+  geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))+
   expand_limits(x=us$long,y=us$lat) + 
   coord_map(xlim=c(nycx+10,nycx-10),ylim=c(nycy+10,nycy-10))+
   ggtitle("Us North Eastern Map Area with population")
