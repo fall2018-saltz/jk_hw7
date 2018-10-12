@@ -5,6 +5,5 @@ library(maps)
 usa <- map_data("state")
 # map <- map_data("usa")
 # map<-get_map(location='united states', zoom=4, maptype = "terrain",source='osm')
-viz=ggplot(data, aes(map_id = state)) +geom_map(fill = data$stateArea), map = usa) +
-    expand_limits(x = usa$long, y = usa$lat) 
+viz=ggplot(data, aes(map_id = state)) +geom_map(aes(fill = data$stateArea), map = usa)+expand_limits(x = usa$long, y = usa$lat) 
 # viz=ggplot(data)+geom_map(data=data,fill="white",color="black")+aes(x=data$stateCenter.x,y=data$stateCenter.y,color=data$stateArea)
