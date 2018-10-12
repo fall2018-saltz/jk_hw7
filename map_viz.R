@@ -1,6 +1,6 @@
 
+library(ggplot2)
 library(ggmap)
-
 library(maps)
 usa <- map_data("state")
 # map <- map_data("usa")
