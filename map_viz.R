@@ -10,8 +10,8 @@ viz <- ggplot(data, aes(map_id=stateName)) + geom_map(map=us, aes(fill=stateArea
 vizmurder <- ggplot(data, aes(map_id=stateName)) + geom_map(map=us, aes(fill=Murder))+ expand_limits(x=us$long,y=us$lat) + coord_map() + ggtitle("US Map Murder Rates")
 vizpopulation<-viz+geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))
 
-nycx <- NewMergeDf[data$stateName=="new york","x"]
-nycy <- NewMergeDf[data$stateName=="new york","y"]
+nycx <- data[data$stateName=="new york","x"]
+nycy <- data[data$stateName=="new york","y"]
 
 viznyc <- ggplot(data, aes(map_id=stateName)) +
   geom_map(map=us, aes(fill=stateArea))+
