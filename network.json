@@ -149,8 +149,11 @@
         },
         {
             "name": "vizpopulation.png"
+        },
+        {
+            "name": "viznyc.png"
         }
     ],
-    "updated_at": "2018-10-12 16:40:48",
+    "updated_at": "2018-10-12 16:47:16",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
