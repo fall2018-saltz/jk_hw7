@@ -126,8 +126,11 @@
         },
         {
             "name": "vizMurder.png"
+        },
+        {
+            "name": "vizpopulation.png"
         }
     ],
-    "updated_at": "2018-10-12 16:36:46",
+    "updated_at": "2018-10-12 16:36:59",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
