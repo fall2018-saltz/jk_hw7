@@ -103,6 +103,16 @@
             ],
             "source": "mergeArrests.R",
             "target": "mergedData.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "viznyc",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "viznyc.png"
         }
     ],
     "nodes": [
@@ -154,6 +164,6 @@
             "name": "viznyc.png"
         }
     ],
-    "updated_at": "2018-10-12 16:47:16",
+    "updated_at": "2018-10-12 16:47:27",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
