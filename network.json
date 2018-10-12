@@ -97,7 +97,7 @@
         {
             "ports": [
                 {
-                    "output": "mergeddata",
+                    "output": "mergedData",
                     "type": "csv"
                 }
             ],
@@ -151,6 +151,6 @@
             "name": "vizpopulation.png"
         }
     ],
-    "updated_at": "2018-10-12 16:40:19",
+    "updated_at": "2018-10-12 16:40:48",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
