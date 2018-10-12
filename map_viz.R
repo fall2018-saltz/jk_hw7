@@ -2,8 +2,10 @@
 library(ggplot2)
 library(ggmap)
 library(maps)
-usa <- map_data("state")
-# map <- map_data("usa")
-# map<-get_map(location='united states', zoom=4, maptype = "terrain",source='osm')
-viz=ggplot(data, aes(map_id = stateName)) +geom_map(aes(fill = data$stateArea), map = usa)+expand_limits(x = usa$long, y = usa$lat) 
-# viz=ggplot(data)+geom_map(data=data,fill="white",color="black")+aes(x=data$stateCenter.x,y=data$stateCenter.y,color=data$stateArea)
+us <- map_data("state")
+View(us)
+#Step B: Generate a color coded map
+viz <- ggplot(NewMergeDf, aes(map_id=stateName)) +
+           geom_map(map=us, aes(fill=NewMergeDf$area))+
+           expand_limits(x=us$long,y=us$lat) + 
+           coord_map() + ggtitle("Us Map Area")
