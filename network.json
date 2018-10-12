@@ -37,16 +37,6 @@
         {
             "ports": [
                 {
-                    "output": "data",
-                    "type": "csv"
-                }
-            ],
-            "source": "mergeArrests.R",
-            "target": "mergedData.csv"
-        },
-        {
-            "ports": [
-                {
                     "input": "data",
                     "type": "csv"
                 }
@@ -103,6 +93,16 @@
             ],
             "source": "map_viz.R",
             "target": "vizpopulation.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "Mergeddata",
+                    "type": "csv"
+                }
+            ],
+            "source": "mergeArrests.R",
+            "target": "mergedData.csv"
         }
     ],
     "nodes": [
@@ -151,6 +151,6 @@
             "name": "vizpopulation.png"
         }
     ],
-    "updated_at": "2018-10-12 16:37:32",
+    "updated_at": "2018-10-12 16:39:39",
     "url": "https://github.com/fall2018-saltz/jk_hw7"
 }
