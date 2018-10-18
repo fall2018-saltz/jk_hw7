@@ -1,0 +1,169 @@
+{
+    "collaborators": [
+        "jkachhadia"
+    ],
+    "created_at": "2018-10-11 15:33:47",
+    "edges": [
+        {
+            "ports": [
+                {
+                    "input": "raw_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "scprc_est_2017_18_pop_res.csv",
+            "target": "clean.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "clean_data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean.R",
+            "target": "clean_data.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "clean_data.csv",
+            "target": "mergeArrests.R"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "mergedData.csv",
+            "target": "add_stateGeom.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "add_stateGeom.R",
+            "target": "datageom.csv"
+        },
+        {
+            "ports": [
+                {
+                    "input": "data",
+                    "type": "csv"
+                }
+            ],
+            "source": "datageom.csv",
+            "target": "map_viz.R"
+        },
+        {
+            "ports": [
+                {
+                    "output": "viz",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "mapviz1.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "vizmurder",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "vizMurder.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "vizpopulation",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "vizpopulation.png"
+        },
+        {
+            "ports": [
+                {
+                    "output": "mergedData",
+                    "type": "csv"
+                }
+            ],
+            "source": "mergeArrests.R",
+            "target": "mergedData.csv"
+        },
+        {
+            "ports": [
+                {
+                    "output": "viznyc",
+                    "type": "png"
+                }
+            ],
+            "source": "map_viz.R",
+            "target": "viznyc.png"
+        }
+    ],
+    "nodes": [
+        {
+            "name": "scprc_est_2017_18_pop_res.csv"
+        },
+        {
+            "assigned_to": "jkachhadia",
+            "name": "clean.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "clean_data.csv"
+        },
+        {
+            "assigned_to": "jkachhadia",
+            "desc": "",
+            "name": "mergeArrests.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "mergedData.csv"
+        },
+        {
+            "assigned_to": "jkachhadia",
+            "desc": "",
+            "name": "add_stateGeom.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "datageom.csv"
+        },
+        {
+            "assigned_to": "jkachhadia",
+            "desc": "",
+            "name": "map_viz.R",
+            "task_status": "in progress"
+        },
+        {
+            "name": "mapviz1.png"
+        },
+        {
+            "name": "vizMurder.png"
+        },
+        {
+            "name": "vizpopulation.png"
+        },
+        {
+            "name": "viznyc.png"
+        }
+    ],
+    "updated_at": "2018-10-12 16:47:27",
+    "url": "https://github.com/fall2018-saltz/jk_hw7"
+}
