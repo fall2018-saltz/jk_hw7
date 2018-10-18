@@ -28,4 +28,4 @@ viznyc <- ggplot(data, aes(map_id=stateName)) +
   geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))+
   expand_limits(x=us$long,y=us$lat) + 
   coord_map(xlim=c(nycx+10,nycx-10),ylim=c(nycy+10,nycy-10))+
-  ggtitle("Us North Eastern Map Area with population")
+  ggtitle("Us North Eastern Map Area(NYC center) with population")
