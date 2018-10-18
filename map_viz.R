@@ -20,6 +20,7 @@ vizpopulation<-viz+geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=populatio
 nycx <- data[data$stateName=="new york","stateCenter.x"]
 nycy <- data[data$stateName=="new york","stateCenter.y"]
 
+#making 
 viznyc <- ggplot(data, aes(map_id=stateName)) +
   geom_map(map=us, aes(fill=stateArea))+
   geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))+
