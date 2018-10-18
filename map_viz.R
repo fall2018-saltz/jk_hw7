@@ -16,11 +16,13 @@ vizmurder <- ggplot(data, aes(map_id=stateName)) + geom_map(map=us, aes(fill=Mur
 #creating a color shaded map with points in the state's center with varying size based on the population in state
 vizpopulation<-viz+geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))
 
+#Step D: Zoom the map
+
 #getting new york state's X and Y coordinates
 nycx <- data[data$stateName=="new york","stateCenter.x"]
 nycy <- data[data$stateName=="new york","stateCenter.y"]
 
-#making 
+#making map around New york with +10 and -10 both in X and Y
 viznyc <- ggplot(data, aes(map_id=stateName)) +
   geom_map(map=us, aes(fill=stateArea))+
   geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))+
