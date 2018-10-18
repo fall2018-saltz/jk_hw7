@@ -13,6 +13,7 @@ viz <- ggplot(data, aes(map_id=stateName)) + geom_map(map=us, aes(fill=stateArea
 #creating a color shaded map for Murder rate of each state
 vizmurder <- ggplot(data, aes(map_id=stateName)) + geom_map(map=us, aes(fill=Murder))+ expand_limits(x=us$long,y=us$lat) + coord_map() + ggtitle("US Map Murder Rates")
 
+#creating a color shaded map with points in the state's center with varying size based on the population in state
 vizpopulation<-viz+geom_point(aes(x=stateCenter.x,y=stateCenter.y,size=population))
 
 nycx <- data[data$stateName=="new york","stateCenter.x"]
